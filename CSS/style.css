@@ -1,0 +1,303 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ------ Fonts Export ------ */
+@font-face {
+    font-family: 'red_octoberfat';
+    src: url('/FONTS/red_october-fat-webfont.woff2') format('woff2'),
+         url('/FONTS/red_october-fat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*------ Variaveis ------*/
+
+:root{
+    /* Fonts */
+    --ff-primary: "red_octoberfat", sans-serif;
+    --ff-sec: "Roboto", serif;
+
+    /* Colors */
+    --clr-background-white: #fafafa;
+    --clr-background-silver: #7e7c7c41;
+    --clr-primary: #a54b3f;
+    --clr-sec-red: #923c3c;
+    --clr-red-text: #d14a4a;
+    --clr-back: #e2a24e;
+    --clr-silver: #696363;
+    --clr-shadow: #301c1c31;
+    --clr-shadow-light: #69636356;
+    --clr-shadow-ultra-light: #4e4e4e0c;
+
+    /* Transition */
+    --transition : all 0.2s linear;
+    --transition-button: 0.2s ease-in;
+    
+
+}
+
+/* ------ 1. Estilos Gerais ------ */
+/***********************************/
+html{
+    font-size: 62.5%; /* - 10px - */
+    /* 10px => 1rem */
+
+}
+
+body{
+    font-family: var(--ff-sec);
+    background: var(--clr-background-white);
+}
+
+
+
+
+
+
+
+/* ------ 2. Navbat ------ */
+/***************************/
+
+.navbar{
+    position: fixed;
+    background: var(--clr-background-white);
+    font-family: var(--ff-primary);
+    width: 100%;
+    padding: 1.6rem;
+    box-shadow: 3px 3px 3px 3px var(--clr-shadow-ultra-light);
+}
+
+.navbar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-header__contente_logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-header__logo{ /* IMG-LOGO*/
+    width: 3.2rem;
+}
+
+.navbar-header__contente_logo span{
+    font-size: 1.8rem;
+    color: var(--clr-silver);
+}
+
+.navbar-header__toggle{
+    background: transparent;
+    border: none;
+    font-size: 3.0rem;
+    color: var(--clr-primary);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navbar-header__toggle:hover{
+    transform: scale(1.1);
+}
+
+/* Navbar-MENU */
+
+.navbar-list__link{
+    margin-bottom: 1.0rem;
+    font-size: 1.4rem;
+    padding: 1.6rem;
+    color: var(--clr-primary);
+    transition: var(--transition);
+    display: block;
+}
+
+.navbar-list__link:hover{
+    color: var(--clr-back);
+    background-color: var(--clr-primary);
+    padding-left: 3.6rem;
+    border-radius: 5px;
+}
+
+.navbar-list{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.navbar-list--show-links{
+    height: 35rem;
+}
+
+.navbar-icons{
+   display: none;
+   transition: var(--transition);
+}
+
+.navbar-icons--show-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8rem;
+    background-color: var(--clr-back);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--clr-shadow-light);
+
+}
+
+
+.navbar-icons i{
+    font-size: 1.8rem;
+    color: var(--clr-primary);
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3 ease-in;
+}
+
+.navbar-icons i:hover{
+    transform: scale(1.1);
+}
+
+/* ------ Foolde animado ------ */
+/********************************/
+.container-header{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-image: url(/IMG/Design\ sem\ nome\ \(16\).png);
+    background-position: 10% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px #301c1c31;
+}
+
+.img-1{
+    padding: 15px;
+}
+
+.img-1 img{
+    height: 550px;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px 5px #923c3c;
+}
+
+.text-1{
+    padding: 20px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 12%;
+    
+}
+
+.text-1 h1{
+    color: #fafafa;
+    font-size: 2.5rem;
+    align-items: center;
+    text-shadow: 3px 3px #923c3c;
+    
+}
+
+/*-- TXT-ANIMADO --*/
+
+.txt-animado span{
+    position: relative;
+    font-family: var(--ff-primary);
+}
+
+.txt-animado span::before{
+    content: "";
+    color: #fafafa;
+    text-shadow: 3px 3px #923c3c;
+    animation: animado 20s infinite;
+}
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #fafafa;
+    right: -10px;
+    opacity: 1;
+    animation: cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 12px);
+    background-color: #d14a4a;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 12px);
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid #d14a4a;
+    }
+}
+
+@keyframes animado{
+    0%,20%{
+        content: "Se o trabalhador";
+    }
+    21%,40%{
+        content: "Tudo produz";
+    }
+    41%,60%{
+        content: "A ele";
+    }
+    61%,80%{
+        content: "Tudo pertence!";
+    }
+    81%,100%{
+        content: "Camaradas Uni-vos!";
+    }
+}
+
+
+
+
+/* ------ Responsividade ------ */
+/********************************/
+@media screen and (min-width: 992px){
+
+    .navbar-header__toggle {
+        display: none;
+    }
+
+    .navbar-list{
+        height: auto;
+        display: flex;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .8rem 1.6rem;
+    }
+
+    .navbar-list__link:hover{
+        background: none;
+        padding-bottom: 0.8rem;
+        padding-left: 1.6rem !important;
+        border-radius: 0;
+        border-bottom: solid 3px var(--clr-primary);
+    }
+
+    .navbar-icons{
+        display: none;
+    }
+}
+
+
