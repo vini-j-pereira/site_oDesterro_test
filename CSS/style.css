@@ -171,8 +171,8 @@ body{
     display: flex;
     width: 100%;
     height: 50vh;
-    background-image: url(/IMG/Design\ sem\ nome\ \(16\).png);
-    background-position: 10% 10%;
+    background-image: url(/IMG/Background-resp.png);
+    background-position: 90% 0%;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 5px 5px 5px #301c1c31;
@@ -199,7 +199,7 @@ body{
 
 .text-1 h1{
     color: #fafafa;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     align-items: center;
     text-shadow: 3px 3px #923c3c;
     
@@ -257,10 +257,10 @@ body{
         content: "A ele";
     }
     61%,80%{
-        content: "Tudo pertence!";
+        content: "Tudo pertence !";
     }
     81%,100%{
-        content: "Camaradas Uni-vos!";
+        content: "Camaradas Uni-vos !";
     }
 }
 
