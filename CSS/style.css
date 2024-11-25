@@ -8,6 +8,9 @@
     text-decoration: none;
 }
 
+/*Inports*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 /* ------ Fonts Export ------ */
 @font-face {
     font-family: 'red_octoberfat';
@@ -288,7 +291,29 @@ body{
 
 .destaques{
     margin-top: 3.0rem;
-    margin-bottom: 3.0rem;
+    margin-bottom: 4.0rem;
+    position: relative;
+}
+
+.destaques::after{
+    content: "\F133";
+    position: absolute;
+    font-family: "bootstrap-icons";
+    font-size: 3rem;
+    color: var(--clr-primary);
+    top: 1.4rem;
+    right: 3rem;
+    animation: arrow .5s ease-in 0s infinite alternate;
+}
+
+@keyframes arrow {
+    from{
+        right: 3rem;
+    }
+
+    to{
+        right: 1.8rem;
+    }
 }
 
 .section_title{
@@ -300,15 +325,22 @@ body{
 }
 
 .destaques-container{
+    display: flex;
+    align-items: center;
     margin-left: 1.6rem;
+    gap: 1.8rem;
+    overflow-y: auto;
+
 }
 
 .destaques-box{
+    flex-shrink: 0;
     background-color: var(--clr-background-silver);
     padding: 2.0rem;
     width: 34rem;
     border-radius: 5px;
     box-shadow:5px 5px 5px var(--clr-shadow);
+    margin-bottom: 2.0rem;
 }
 
 .canal-box h3{
