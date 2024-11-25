@@ -24,12 +24,12 @@
                     <span>O Desterro</span>
                 </div>
                 
-                <button type="button" class="navbar-header__toggle">
+                <button type="button" class="navbar-header__toggle" onclick="menuResp()">
                     <i class="bi bi-list"></i>
                 </button>
             </div>
 
-            <ul class="navbar-list">
+            <ul id="navbar-list" class="navbar-list">
                 <li><a href="#" class="navbar-list__link">Inicio</a></li>
                 <li><a href="#" class="navbar-list__link">Blog</a></li>
                 <li><a href="#" class="navbar-list__link">Biblioteca</a></li>
@@ -38,7 +38,7 @@
                 <li><a href="#" class="navbar-list__link">Contato</a></li>
             </ul>
 
-            <ul class="navbar-icons">
+            <ul id="navbar-icons" class="navbar-icons">
                 <li>
                     <a href="#" target="_blank" class="navbar-icons__icon">
                         <i class="bi bi-instagram"></i>
@@ -64,11 +64,12 @@
         <section class="container-header"> 
             <div class="text-1">
                 <h1 class="txt-animado">
-                    <span></span>
+                    <span id="span-animado" class="span-animado"></span>
                 </h1>
             </div>
         </section>
     </header>
     
+    <script src="JS/scripts.js"></script>
 </body>
 </html>

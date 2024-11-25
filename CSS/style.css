@@ -134,6 +134,8 @@ body{
 
 .navbar-list--show-links{
     height: 35rem;
+    background: var(--clr-background-white);
+    z-index: 999999;
 }
 
 .navbar-icons{
@@ -149,6 +151,7 @@ body{
     background-color: var(--clr-back);
     border-radius: 5px;
     box-shadow: 3px 3px 3px var(--clr-shadow-light);
+    z-index: 999999;
 
 }
 
@@ -176,6 +179,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 5px 5px 5px #301c1c31;
+    z-index: 1;
 }
 
 .img-1{
@@ -202,14 +206,23 @@ body{
     font-size: 2.0rem;
     align-items: center;
     text-shadow: 3px 3px #923c3c;
+    z-index: 0;
     
 }
 
 /*-- TXT-ANIMADO --*/
+/*******************/
+.span-animado{
+    z-index: 1;
+}
+.span-animado--show-links{
+    display: none;
+}
 
 .txt-animado span{
     position: relative;
     font-family: var(--ff-primary);
+    z-index: 0;
 }
 
 .txt-animado span::before{
@@ -217,6 +230,7 @@ body{
     color: #fafafa;
     text-shadow: 3px 3px #923c3c;
     animation: animado 20s infinite;
+    z-index: 0;
 }
 
 .txt-animado span::after{
@@ -229,6 +243,7 @@ body{
     animation: cursor .8s infinite, digita 20s steps(15) infinite;
     width: calc(100% + 12px);
     background-color: #d14a4a;
+    z-index: 0;
 }
 
 @keyframes digita {
@@ -271,6 +286,10 @@ body{
 /********************************/
 @media screen and (min-width: 992px){
 
+    .navbar-header__contente_logo span{
+        font-size: 2.5rem;
+    }
+
     .navbar-header__toggle {
         display: none;
     }
@@ -297,6 +316,24 @@ body{
 
     .navbar-icons{
         display: none;
+    }
+
+    /* ------ Cartaz Header ------ */
+    /*******************************/
+
+    .container-header{
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        background-image: url(/IMG/Design\ sem\ nome\ \(16\).png);
+        background-position: 100% 19%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 5px 5px 5px #301c1c31;
+    }
+
+    .text-1 h1{
+        font-size: 4.2rem;
     }
 }
 
