@@ -73,6 +73,7 @@ body{
     width: 100%;
     padding: 1.6rem;
     box-shadow: 3px 3px 3px 3px var(--clr-shadow-ultra-light);
+    z-index: 999999999;
 }
 
 .navbar-header{
@@ -130,17 +131,19 @@ body{
     height: 0;
     overflow: hidden;
     transition: var(--transition);
+    z-index: 9999999999;
 }
 
 .navbar-list--show-links{
     height: 35rem;
     background: var(--clr-background-white);
-    z-index: 999999;
+    z-index: 99999999999;
 }
 
 .navbar-icons{
    display: none;
    transition: var(--transition);
+   z-index: 99999999999;
 }
 
 .navbar-icons--show-links{
@@ -151,7 +154,7 @@ body{
     background-color: var(--clr-back);
     border-radius: 5px;
     box-shadow: 3px 3px 3px var(--clr-shadow-light);
-    z-index: 999999;
+    z-index: 99999999999;
 
 }
 
@@ -277,6 +280,109 @@ body{
     81%,100%{
         content: "Camaradas Uni-vos !";
     }
+}
+
+
+/* ------ Destaques ------ */
+/***************************/
+
+.destaques{
+    margin-top: 3.0rem;
+    margin-bottom: 3.0rem;
+}
+
+.section_title{
+    font-family: var(--ff-primary);
+    margin-left: 1.6rem;
+    margin-bottom: 1.6rem;
+    color: var(--clr-silver);
+    font-size: 1.6rem;
+}
+
+.destaques-container{
+    margin-left: 1.6rem;
+}
+
+.destaques-box{
+    background-color: var(--clr-background-silver);
+    padding: 2.0rem;
+    width: 34rem;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px var(--clr-shadow);
+}
+
+.canal-box h3{
+    color: var(--clr-primary);
+    font-family: var(--ff-primary);
+    border-bottom: solid 2px var(--clr-background-white);
+    margin-bottom: 1.6rem;
+}
+
+.destaques-box-img{
+    width: 30rem;
+    border-radius: 5px;
+}
+
+.destaques-box-text{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.destaques-box-text p{
+    color: var(--clr-silver);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.title-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.destaques-title-box{
+    font-family: var(--ff-sec);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--clr-sec-red);
+}
+
+.dataBlog{
+   font-size: 1rem;
+    font-weight: bolder;
+    color: var(--clr-silver); 
+}
+
+.btn-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#lerMais{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    background-color: var(--clr-silver);
+    color: var(--clr-background-white);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+#lerMais:hover{
+    background-color: var(--clr-red-text);
+    transform: scale(1.05);
+}
+
+#destaquesLikeIcons{
+    color: var(--clr-silver);
+}
+
+.NumberLikes i{
+    color: var(--clr-silver);
+    font-size: 1rem;
+    font-weight: bolder;
 }
 
 
