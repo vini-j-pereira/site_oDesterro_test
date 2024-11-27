@@ -195,7 +195,7 @@ body{
 .img-1 img{
     height: 550px;
     border-radius: 10px; 
-    box-shadow: 5px 5px 5px 5px #923c3c;
+    box-shadow: 5px 5px 5px 5px var(--clr-sec-red);
 }
 
 .text-1{
@@ -211,7 +211,7 @@ body{
     color: #fafafa;
     font-size: 2.0rem;
     align-items: center;
-    text-shadow: 3px 3px #923c3c;
+    text-shadow: 3px 3px var(--clr-sec-red);
     z-index: 0;
     
 }
@@ -338,6 +338,7 @@ body{
     background-color: var(--clr-background-silver);
     padding: 2.0rem;
     width: 34rem;
+    height: 37rem;
     border-radius: 5px;
     box-shadow:5px 5px 5px var(--clr-shadow);
     margin-bottom: 2.0rem;
@@ -364,6 +365,10 @@ body{
     color: var(--clr-silver);
     font-size: 1rem;
     text-align: justify;
+    width: 30rem;
+    height: 5.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .title-icon{
@@ -415,6 +420,35 @@ body{
     color: var(--clr-silver);
     font-size: 1rem;
     font-weight: bolder;
+}
+
+
+
+
+
+/* ------ Responsividade telas menores ------ */
+/**********************************************/
+
+@media screen and (min-width: 805px) {
+
+    .destaques{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: visible;
+
+    }
+
+   .destaques-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0;
+
+   }
+
+    .destaques::after{
+        content: "";
+    }
 }
 
 

@@ -1,0 +1,29 @@
+{
+  "destaques": [
+    {
+        "categoria": "Blog",
+        "imagem": "IMG/O Manifesto Comunista.png",
+        "titulo": "O manifesto Comunista",
+        "data": "25/12/2025",
+        "texto": "Um espectro ronda a Europa - o espectro do comunismo. Toda as potências de velha Europa unem-se numa Santa Aliança para conjurá-lo: o papa e o czar, Metternich e Guizoi, os radicais da França e os policiais da Alemanha. Um espectro ronda a Europa - o espectro do comunismo. Toda as potências de velha Europa unem-se numa Santa Aliança para conjurá-lo: o papa e o czar, Metternich e Guizoi, os radicais da França e os policiais da Alemanha.",
+        "likes": 200
+    },
+    {
+        "categoria": "Blog",
+        "imagem": "IMG/O Manifesto Comunista.png",
+        "titulo": "O manifesto Comunista",
+        "data": "25/12/2025",
+        "texto": "Um espectro ronda a Europa - o espectro do comunismo. Toda as potências de velha Europa unem-se numa Santa Aliança para conjurá-lo: o papa e o czar, Metternich e Guizoi, os radicais da França e os policiais da Alemanha.",
+        "likes": 200
+    },
+    {
+        "categoria": "Notícia",
+        "imagem": "IMG/O Manifesto Comunista.png",
+        "titulo": "A revolução começa!",
+        "data": "20/11/2024",
+        "texto": "Uma breve análise das mudanças estruturais no sistema político moderno.",
+        "likes": 25
+      }
+  ]
+    
+}
