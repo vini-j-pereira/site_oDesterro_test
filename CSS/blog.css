@@ -68,6 +68,15 @@ body .body-page{
 
 /* ------ Header Blog ------ */
 /*****************************/
+.container-header{
+    display: none;
+    width: 0;
+    height: 0 !important;
+}
+
+.text-1{
+    display: none;
+}
 
 .conteiner-blog{
     background-image: url(/IMG/Marx\ \(2\).png);
@@ -79,12 +88,13 @@ body .body-page{
     display: flex;
     align-items: center;
     overflow: hidden;
+    box-shadow: 5px 5px 5px var(--clr-shadow);
 
 }
 
 .header-blog h2{
     font-family:var(--ff-primary);
-    font-size: 10rem;
+    font-size: 5rem;
     text-align: center;
     color: var(--clr-background-white);
     text-shadow: 5px 5px var(--clr-sec-red);
@@ -99,11 +109,6 @@ body .body-page{
     display: flex;
     align-items: center;
     justify-content: center;    
-    overflow-y: hidden;
-}
-
-.box-blogs-bloger {
-    overflow-y: hidden !important;
 }
 
 .bloger{
