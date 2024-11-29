@@ -103,6 +103,12 @@ body .body-page{
 /* ------ Box Bloger ------ */
 /****************************/
 
+.box-blogs-bloger{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .box-blogs{
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -124,9 +130,8 @@ body .body-page{
 }
 
 .bloger img {
-    border: solid 3px var(--clr-background-white);
     border-radius: 20px;
-    box-shadow: 5px 5px 5px var(--clr-shadow);
+    clip-path: circle(50%) 
 }
 
 .bloger h3{
