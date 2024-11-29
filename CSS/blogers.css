@@ -93,3 +93,20 @@ body{
     font-size: 1.2rem;
     text-shadow: 5px 5px 5px var(--clr-sec-red);
 }
+
+#container-blog{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-blog-box{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destaques-box{
+    height: 42rem;
+}

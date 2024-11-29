@@ -1,0 +1,24 @@
+{
+    "blogtheo": [
+        {
+            "id": "",
+            "categoria": "Blog",
+            "imagem": "IMG/theo.jpeg",
+            "titulo": "Titulo Qualquer",
+            "data": "29/11/20224",
+            "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deserunt dolore consequuntur praesentium officiis.",
+            "likes": "200"
+        }
+    ],
+    "blogvini": [
+        {
+            "id": "",
+           "categoria": "Blog",
+            "imagem": "IMG/viniblog.jpeg",
+            "titulo": "Titulo Qualquer",
+            "data": "29/11/20224",
+            "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deserunt dolore consequuntur praesentium officiis.",
+            "likes": "250"
+        }
+    ]
+}
