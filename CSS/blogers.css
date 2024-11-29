@@ -61,8 +61,8 @@ body{
 }
 
 .header-blogers{
-    background-image: url(/IMG/Marx.png);
-    background-position: left;
+    background-image: url(/IMG/Bloger\ const\ resp.png);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
@@ -78,14 +78,8 @@ body{
    margin-top: 2.5rem;
 }
 
-.img-blogers{
-    width: 10rem;
-    border-radius: 10px;
-    border: solid 2px var(--clr-back);
-    margin-bottom: 1.6rem;
-}
-
 .blogers-box h3{
+    margin-top: 15rem;
     font-family: var(--ff-primary);
     color: var(--clr-back);
     font-size: 1.5rem;
