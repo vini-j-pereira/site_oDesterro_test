@@ -14,7 +14,7 @@
         {
             "id": "",
            "categoria": "Blog",
-            "imagem": "IMG/viniblog.jpeg",
+            "imagem": "/IMG/Marx.png",
             "titulo": "Titulo Qualquer",
             "data": "29/11/20224",
             "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deserunt dolore consequuntur praesentium officiis.",
